@@ -45,7 +45,6 @@ app.post('/', async (req, res) => {
 
         let accessKeys = await accessKeysResponse.json()
         accessKeys = accessKeys.result.keys.map(k => k.public_key.split(':')[1])
-        console.log(accessKeys)
         if (accessKeys.indexOf(decodedPublicKEy) === -1) {
             res.status(403)
             res.send("Keys does not match. Access denied")
