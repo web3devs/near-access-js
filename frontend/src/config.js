@@ -1,4 +1,4 @@
-const CONTRACT_NAME = "jmachnik.testnet"; /* TODO: fill this in! */
+const CONTRACT_NAME = "CONTRACT_NAME (your testnet account id)"; /* TODO: fill this in! */
 
 export const getConfig = (env) => {
     switch (env) {
