@@ -1,0 +1,11 @@
+{
+  "name": "near-access-js",
+  "version": "1.0.0",
+  "description": "JS library for handling near-api-js and nft access",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "near-api-js": "^0.45.1",
+    "buffer": "^6.0.3"
+  }
+}

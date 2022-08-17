@@ -18,12 +18,22 @@ verification
 
 ### **Configuration**
 
-in [config.js](frontend/src/config.js) you need to provide contract name which is you testnet wallet address
+To run both `frontend` and `lib`:
 
-`const CONTRACT_NAME = "YOUR_NAME.testnet"; /* TODO: fill this in! */`
+```
+cd lib
+
+yarn link
+```
+
+Then open `frontend` directory and run:
+```
+yarn link 'near-access-js'
+```
+
 
 ### Running
 
-`yarn install`
+`yarn`
 
 `yarn dev`
