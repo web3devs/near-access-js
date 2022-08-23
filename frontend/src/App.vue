@@ -1,4 +1,26 @@
 <script setup>
+import NearProvider from 'near-access-vue/src/components/NearProvider.vue';
+import { handleSubmit, handleDisconnect } from 'near-access-vue/src/data';
+const handleClick = () => {
+  handleSubmit({ username: 'bujal.testnet' });
+};
+</script>
+
+<template>
+  <div>
+    <NearProvider>
+      <div>Secret content</div>
+      <template v-slot:connect>
+        <button @click="handleClick">Connect</button>
+      </template>
+      <template v-slot:disconnect>
+        <button @click="handleDisconnect">Disconnect</button>
+      </template>
+    </NearProvider>
+  </div>
+</template>
+<!--
+<script setup>
 import { onMounted, ref } from 'vue';
 
 import {
@@ -11,7 +33,7 @@ import {
 // window.nearConfig = getConfig('testnet');
 const accountId = ref('');
 const tokenId = ref('10');
-const collectionContract = ref('latium.mintspace2.testnet');
+const collectionContract = ref('bujal.testnet');
 
 onMounted(async () => {
   try {
@@ -20,6 +42,15 @@ onMounted(async () => {
     accountId.value = getData().accountId;
   }
 });
+
+const handler = async () => {
+  try {
+    // await initClient('http://localhost:3000', collectionContract.value);
+    await connect();
+  } finally {
+    accountId.value = getData().accountId;
+  }
+};
 </script>
 
 <template>
@@ -27,7 +58,7 @@ onMounted(async () => {
     <div class="connection">
       <div>
         <div>
-          <button @click="connect" v-if="!accountId">Connect</button>
+          <button @click="handler" v-if="!accountId">Connect</button>
           <div v-else>
             Logged as {{ accountId }}
             <button @click="disconnect">Disconnect</button>
@@ -58,4 +89,4 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
 }
-</style>
+</style> -->
