@@ -8,8 +8,16 @@ const handleClick = () => {
 
 <template>
   <div>
-    <NearProvider>
+    <NearProvider
+      nftName="NFT-T"
+      :requiredNumber="2"
+      contractAddress="'latium.mintspace2.testnet'"
+    >
       <div>Secret content</div>
+      <!-- <template v-slot:no-access>
+        You don't have enought {{ nftName }} tokens. You need at least
+        {{ requiredNumber }}
+      </template> -->
       <template v-slot:connect>
         <button @click="handleClick">Connect</button>
       </template>
