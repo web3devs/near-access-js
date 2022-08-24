@@ -1,5 +1,5 @@
 <script setup>
-import { initClient } from 'near-access-js';
+import { initClient, sendMessage } from 'near-access-js';
 import { onMounted } from 'vue';
 import { handleSubmit, accountId, hasAccess } from '../data';
 import Connect from './Connect.vue';
