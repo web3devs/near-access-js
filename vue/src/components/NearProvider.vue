@@ -17,13 +17,9 @@ const props = defineProps({
 
 onMounted(async () => {
   try {
-    await initClient(
-      'http://localhost:3000',
-      props.contractAddress,
-      async (newData) => {
-        accountId.value = newData.accountId;
-      }
-    );
+    await initClient(props.contractAddress, async (newData) => {
+      accountId.value = newData.accountId;
+    });
   } finally {
     if (accountId.value) {
       hasAccess.value = await sendMessage();
