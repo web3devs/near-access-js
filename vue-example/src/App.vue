@@ -1,17 +1,20 @@
 <script setup>
 import NearProvider from 'near-access-vue/src/components/NearProvider.vue';
+import { ref } from 'vue';
 import { handleSubmit, handleDisconnect } from 'near-access-vue/src/data';
 const handleClick = () => {
   handleSubmit({ username: 'bujal.testnet' });
 };
+const address = ref('latium.mintspace2.testnet'); //ref('cowboytest.mintspace2.testnet');
 </script>
 
 <template>
   <div>
+    <input v-model="address" />
     <NearProvider
       nftName="NFT-T"
       :requiredNumber="2"
-      contractAddress="'latium.mintspace2.testnet'"
+      :contractAddress="address"
     >
       <div>Secret content</div>
       <!-- <template v-slot:no-access>
