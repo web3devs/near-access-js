@@ -27,3 +27,25 @@
     transform: rotate(360deg);
   }
 }
+
+.gated-content {
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  border: thin solid;
+  border-radius: 3px;
+}
+.locked {
+  border-color: rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.05);
+}
+.locked::before {
+  content: "Blocked\a";
+  white-space: pre;
+  font-weight: bold;
+  font-size: 110%;
+}
+.unlocked {
+  border-color: rgba(0, 0, 255, 1);
+  background-color: rgba(0, 0, 255, 0.05);
+}

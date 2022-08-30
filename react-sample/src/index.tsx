@@ -8,6 +8,9 @@ import {makeNearProviderState} from "react-near/NearProvider";
 import createNearClient, {encodeRequest} from "react-near/core/client";
 import {DEFAULT_CONNECTION_CONTRACT, FT_CONTRACT_METHODS} from "./config";
 import {Contract} from "near-api-js";
+import {Buffer} from "buffer";
+
+window.Buffer = Buffer
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
