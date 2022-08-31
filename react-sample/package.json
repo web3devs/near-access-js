@@ -11,7 +11,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.0",
     "buffer": "^6.0.3",
-    "near-access-react": "../near-access-rect/dist",
+    "near-access-react": "../near-access-react/dist",
     "near-api-js": "^0.43.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
