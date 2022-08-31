@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import {useNearAccount, useNearUser} from "react-near";
 import {DEFAULT_CONNECTION_CONTRACT} from "./config";
-import {useHasNft} from "./hooks/useHasNft";
+import {useHasNft} from "./hooks/useHasNft"; /* works */
+// import {useHasNft} from "near-access-react"; /* React throws a hooks error */
 
 function App() {
     const account = useNearAccount()
