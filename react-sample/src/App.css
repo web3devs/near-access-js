@@ -32,7 +32,7 @@
   width: 500px;
   padding: 20px;
   margin: 20px;
-  border: thin solid;
+  border: thin solid black;
   border-radius: 3px;
 }
 .locked {
