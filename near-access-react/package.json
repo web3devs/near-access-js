@@ -2,16 +2,17 @@
   "name": "near-access-react",
   "version": "0.0.1",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc -b"
   },
-  "devDependencies": {
-    "@types/react": "^18.0.17",
-    "typescript": "^4.8.2"
-  },
-  "dependencies": {
-    "near-api-js": "^1.0.0",
+  "peerDependencies": {
+    "@types/react": "^18.0.15",
+    "react": "^18.2.0",
+    "near-api-js": "^0.43.1",
     "react-near": "^4.5.2"
   },
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts"
+  "dependencies": {
+    "near-api-js": "^1.0.0"
+  },
+  "main": "index.js",
+  "typings": "./index.d.ts"
 }
