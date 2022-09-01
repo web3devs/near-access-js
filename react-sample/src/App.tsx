@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {useNearAccount, useNearUser} from "react-near";
 import {DEFAULT_CONNECTION_CONTRACT} from "./config";
-import {useHasNft} from "near-access-react/dist";
+import {useHasNft} from "near-access-react";
 
 function App() {
     const account = useNearAccount()
