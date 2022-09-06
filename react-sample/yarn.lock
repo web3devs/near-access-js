@@ -6192,8 +6192,8 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-near-access-react@../near-access-react/dist:
-  version "0.0.0"
+near-access-react@../near-access-react:
+  version "0.0.1"
 
 near-api-js@^0.43.1:
   version "0.43.1"
@@ -7377,9 +7377,9 @@ react-is@^18.0.0:
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
 react-near@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/react-near/-/react-near-4.5.2.tgz#f5a237cae69dd9376b1fa22c3f4902e50a3e7c93"
-  integrity sha512-9wn4ItRYeXiB51tHFybVixLMStNyVmG29RIMAsQu17I/gV/rZhalZt3OfIOsgCJGtWWZXqmw7MA8fUx7RRqUCA==
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/react-near/-/react-near-4.7.1.tgz#c38c8b6b32ea665bbf1d856c3375895f935f59db"
+  integrity sha512-AuWw7vaRtYGC+g8R6TXB55gnMoWoFdRAh44EbQJY6LuXzZDGzJxX/8UWQN3On4Nlh93FhFkd2bjfXJ5qdK0Amw==
   dependencies:
     cookie "^0.5.0"
 

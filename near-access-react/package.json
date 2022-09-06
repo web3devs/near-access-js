@@ -1,18 +1,22 @@
 {
   "name": "near-access-react",
   "version": "0.0.1",
+  "license": "Apache-2.0",
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "prepare": "yarn build"
   },
   "peerDependencies": {
     "@types/react": "^18.0.15",
-    "react": "^18.2.0",
     "near-api-js": "^0.43.1",
-    "react-near": "^4.5.2"
+    "react": "^18.2.0",
+    "react-near": "^4.7.0"
   },
-  "dependencies": {
-    "near-api-js": "^1.0.0"
+  "devDependencies": {
+    "@types/react": "18.0.15",
+    "near-api-js": "^0.43.1",
+    "typescript": "^4.8.2"
   },
-  "main": "index.js",
-  "typings": "./index.d.ts"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts"
 }
